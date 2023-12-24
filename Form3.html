@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOrm3</title>
+</head>
+<body>
+    <h2>Complex Form</h2>
+    <form >
+        <fieldset>
+            <label for="name"> Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <br/>
+            <br/>
+    
+           <label for="email"> Email:</label>
+           <input type="email" name="emailid" id="emailid" placeholder="Enter valid phone no">
+           <br/>
+           <br/>
+    
+            <label for="phone">Phone No:</label>
+           <input type="tel" name="phone" id="phone">
+           <br/>
+           <br/>
+
+           <label for="date"> Date Of Birth</label>
+            <input type="date" name="date" id="date">
+            <br/>
+            <br/>
+
+            <span>Gender :</span>
+            <label for="radio1" > Male</label>
+            <input type="radio" name="radio" id="radio1">
+            
+            <label for="radio2">Female</label>
+            <input type="radio" name="radio" id="radio2">
+
+    
+            <br/>
+            <br/>
+
+            <label for="country">Select Country</label>
+            <select name="country" id="country">
+                <option selected disabled> Choose here</option>
+                <option value="c1">USA</option>
+                <option value="c2">India</option>
+                <option value="c3">China</option>
+                <option value="c4">Japan</option>
+                <option value="c5">Saudi</option>
+            </select>
+        </fieldset>
+        <br>
+    
+        <fieldset>
+            <label for="add"> Address Street:</label>
+            <input type="text" name="add" id="add" placeholder="Enter Your address">
+            <br/>
+            <br/>
+            <label for="city"> City:</label>
+            <input type="text" name="city" id="city" placeholder="Enter Your city">
+            <br/>
+            <br/>
+            <label for="state"> State:</label>
+            <input type="text" name="state" id="state" placeholder="Enter Your State Name">
+            <br/>
+            <br/>
+            <label for="pin"> PinCode:</label>
+            <input type="text" name="pin" id="pin" placeholder="Enter Your PinCode">
+            <br/>
+            <br/>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Other Information</legend>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+            <br>
+            <label for="yes"> I agree to the terms of service</label>
+            <input type="checkbox" name="yes" id="yess">
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
