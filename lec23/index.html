@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation ka Gyaan</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: beige;
+            width: 100vw;
+            height: 100vh;
+            border: black solid 5px;
+        
+        }
+        .box{
+            background-color: blueviolet;
+            width: 350px;
+            height: 80px;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid yellow;
+         position: relative;
+         box-shadow: 10px 10px 10px royalblue;
+            /* animation-name: rightmovement;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            
+            /* animation-direction: alternate; */
+            /* animation-fill-mode: backwards; */ 
+            animation:5s linear 1s infinite alternate none running rightmovement;
+        }
+        @keyframes rightmovement {
+            from{
+            top:0;
+            left: 0;
+            }
+            to{
+            top:0;
+            left: 1200px;
+            
+            }
+           
+        }
+
+        #box2{
+            background-color: blueviolet;
+            width: 350px;
+            height: 80px;
+            border-radius: 10px;
+            margin: 10px;
+            border: 3px solid yellow;
+            box-shadow: 10px 10px 10px royalblue;
+         position: relative;
+         animation:5s linear 1s infinite alternate none running leftmovement;
+        }
+        @keyframes leftmovement {
+            from{
+            top:500px;
+            left: 1350px;
+            }
+            to{
+            top:500px;
+            left: 0px;
+            
+            }
+           
+        }
+        .circle{
+            background-color: blueviolet;
+            width: 100px;
+            height: 100px;
+            border-radius: 150px;
+            margin: 10px;
+            position: relative;
+            top: 150px;
+            left: 600px;
+            animation:5s linear 1s infinite alternate none running circlemovement;
+        }
+
+        @keyframes circlemovement {
+            0%{
+            top: 10%;
+            left: 5%;
+            }
+            30%{
+              top: 25%;
+              left: 80%;
+            }
+            60%{
+          top: 50%;
+          left: 40%;
+            }
+            100%{
+            top: 15%;
+            left: 40%;
+            }
+        }
+        h1{
+            border: black solid 2px;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <h1>Aao Mela Dekhe</h1>
+    <div class="box">
+
+    </div>
+    <div class="box" id="box2"></div>
+    <div class="circle"></div>
+    </div>
+</body>
+</html>

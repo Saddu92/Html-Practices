@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .box{
+            background-color: purple;
+            border: solid black 2px;
+            width: 500px;
+            height: 500px;
+
+        }
+        @media (max-width: 500px) {
+         .box{
+            background-color: beige;
+         }   
+        } */
+        
+    
+        .container{
+            background-color: beige;
+            border: solid black 3px;
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            height: 250px;
+            
+        
+            
+        }
+        .box{
+             
+          border: solid black 2px;
+        
+          width: 200px;
+           height: 200px;
+          padding: 5px;
+          margin: 2px; 
+        }
+        #b2{
+        }
+
+        #b1{
+         
+          border: solid black 2px;
+          /* background-color: aqua;
+          /* width: 200px; */
+          /* height: 200px;
+          padding: 5px;
+          margin: 2px; */ 
+        }
+        #b2{
+            background-color: blueviolet;
+          /* border: solid black 2px; */
+          /* width: 200px;
+          height: 200px;
+          padding: 5px;
+          margin: 2px; */
+        }
+        #b3{
+            background-color: palevioletred;
+          /* border: solid black 2px;
+          /* width: 200px; */
+          /* height: 200px; 
+          padding: 5px;
+          margin: 2px; */ 
+        }
+        #b4{
+            background-color:purple;
+          /* border: solid black 2px;
+          width: 200px;
+          height: 200px;
+          padding: 5px;
+          margin: 2px; */
+        }
+        @media (max-width:640px){
+                .container{
+                    flex-direction:column;
+                }
+            }
+        @media (min-width:640px){
+            .container{
+                flex-direction:row;
+            }
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+   <div class="box" id="b1"> HEllo</div>
+   <div class="box" id="b2">Shaikh </div>
+   <div class="box" id="b3">Mohammad</div>
+   <div class="box" id="b4">Saad</div>
+</div> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: aliceblue;
+    border: solid black 2px;
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 3s linear 1s;
+
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    font-size:28px ;
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.box:hover{
+   transform: rotate(45deg)  translate(400px,200px);
+}
