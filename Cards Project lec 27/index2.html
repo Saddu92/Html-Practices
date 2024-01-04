@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card 2</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height:100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .card{
+            width: 360px;
+            height: 550px;
+            background-color: white;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .card img{
+            width: 101%;
+            height: 40%;
+        }
+        .card p{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            /* padding: 10px; */
+            text-align: center;
+            /* width: 70%; */
+
+        }
+
+        #amountBox{
+            width: 80%;
+            height: 10%;
+            background-color: #8BC6EC;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+        }
+        .leftBox{
+            width: fit-content;  
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            height: 100%;
+            align-items: center;
+
+        }
+        .txtBox{
+            gap: 10px;
+        }
+        .rightBox{
+
+         } 
+
+        .imgBox img{
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+
+        }
+        #paymentBox{
+            width: 80%;
+            height: 7%;
+            background-color: rgba(18, 18, 73, 0.855);
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        }
+        .cancelBox a{
+            text-decoration: none;
+            color: rgba(65, 61, 61, 0.722);
+            font-weight: bold;
+            font-size: large;
+        }
+        
+         
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+           <div class="card">
+         <img src="https://www.ncw.co.uk/wp-content/uploads/2020/06/Music-Club.jpg" alt=" Music Banner">
+         <h2> Order Summary</h2>
+         <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, voluptates obcaecati. Cupiditate repellat modi necessitatibus. Id laudantium asperiores ipsam voluptatem.</p>
+         <div id="amountBox">
+             <div class="leftBox">
+                 <div class="imgBox">
+                   <img src="https://www.macworld.com/wp-content/uploads/2023/10/apple-music-spotify-graphic.jpg?resize=1240%2C826&quality=50&strip=all" alt="Music icon">
+                 </div>
+                 <div class="txtBox">
+                   <p>Annual Plan</p>
+                   <p>Rs.500/year</p>
+                 </div>
+             </div>
+
+             <div class="rightBox">
+                  <div class="anchorBox">
+                    <a href="#">Change</a>
+                  </div>
+             </div>
+         </div>
+         <button id="paymentBox">
+            Proceed To Payment
+         </button>
+         <div class="cancelBox">
+            <a href="#">Cancel Order</a>
+
+         </div>
+        
+           </div>
+          
+    </div>
+</body>
+</html>
